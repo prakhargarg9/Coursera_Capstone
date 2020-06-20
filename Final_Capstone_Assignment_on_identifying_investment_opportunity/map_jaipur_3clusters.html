@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_b148af9f2e0b47c7a473412f5d95998b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b148af9f2e0b47c7a473412f5d95998b" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_b148af9f2e0b47c7a473412f5d95998b = L.map(
+                                  'map_b148af9f2e0b47c7a473412f5d95998b',
+                                  {center: [26.916194,75.820349],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_42314291281e4e858fa6edf36441fa40 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+        
+    
+            var circle_marker_f12a251e62fa42fc8dadf2a5c784621f = L.circleMarker(
+                [26.930038198008976,75.80509179210247],
+                {
+  "bubblingMouseEvents": true,
+  "color": "magenta",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "magenta",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_42b05f1022cb4990a8f06b79338c0023 = L.popup({maxWidth: '300'});
+
+            
+                var html_d7215ba1c4824c39a5799f036c88e415 = $('<div id="html_d7215ba1c4824c39a5799f036c88e415" style="width: 100.0%; height: 100.0%;">Ashoknagar,Bhura Tiba,C.P.m.g,Chandpole Bazar,Indra Bazar,Jaipur.,M.I.road,Purani Basti,Rajasthan State hotel</div>')[0];
+                popup_42b05f1022cb4990a8f06b79338c0023.setContent(html_d7215ba1c4824c39a5799f036c88e415);
+            
+
+            circle_marker_f12a251e62fa42fc8dadf2a5c784621f.bindPopup(popup_42b05f1022cb4990a8f06b79338c0023);
+
+            
+        
+    
+            var circle_marker_07cd826dba4947eb8af04e8ea0f441b5 = L.circleMarker(
+                [26.94259071400007,75.83860000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "magenta",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "magenta",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_5682c2bbd90a450c9cfbafeb869694b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_c9f2fafec9294c98b1ea3f086e00b850 = $('<div id="html_c9f2fafec9294c98b1ea3f086e00b850" style="width: 100.0%; height: 100.0%;">Amer Road,Govind Nagar,Kishanpole Bazar,Shivaji Nagar,Tripolia Bazar</div>')[0];
+                popup_5682c2bbd90a450c9cfbafeb869694b6.setContent(html_c9f2fafec9294c98b1ea3f086e00b850);
+            
+
+            circle_marker_07cd826dba4947eb8af04e8ea0f441b5.bindPopup(popup_5682c2bbd90a450c9cfbafeb869694b6);
+
+            
+        
+    
+            var circle_marker_94675396720549e7985782c205b212b6 = L.circleMarker(
+                [26.91063500000007,75.84966227600006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_c8057da3e6c8413588e533f693dc5c6c = L.popup({maxWidth: '300'});
+
+            
+                var html_fe0cc3c976a6484f8fa9033cf48e6cb5 = $('<div id="html_fe0cc3c976a6484f8fa9033cf48e6cb5" style="width: 100.0%; height: 100.0%;">Haldiyon Ka rasta,Jaipur City,Krishi Upaj mandi,R.A.c.,Ramganj Bazar</div>')[0];
+                popup_c8057da3e6c8413588e533f693dc5c6c.setContent(html_fe0cc3c976a6484f8fa9033cf48e6cb5);
+            
+
+            circle_marker_94675396720549e7985782c205b212b6.bindPopup(popup_c8057da3e6c8413588e533f693dc5c6c);
+
+            
+        
+    
+            var circle_marker_4939828f4aa449168caa70265a68876a = L.circleMarker(
+                [26.887956048000035,75.83186000000006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_97100721b4b54da5a42cd876dc5f97d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_6c6bbf6e894b4629b2e512490d3f6936 = $('<div id="html_6c6bbf6e894b4629b2e512490d3f6936" style="width: 100.0%; height: 100.0%;">Arjun Lal sethi nagar,Janta Colony,Jawahar Nagar,Jhalana Doongri,Krishna Mandir,Moti Doongari road,Raja Park colony,Rajasthan University,S.M.s.hospital,Tilak Nagar</div>')[0];
+                popup_97100721b4b54da5a42cd876dc5f97d0.setContent(html_6c6bbf6e894b4629b2e512490d3f6936);
+            
+
+            circle_marker_4939828f4aa449168caa70265a68876a.bindPopup(popup_97100721b4b54da5a42cd876dc5f97d0);
+
+            
+        
+    
+            var circle_marker_7f8da1ddcea24a8698ef4f6a15fef7a2 = L.circleMarker(
+                [26.89951074700008,75.79193500000008],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_fde06257795b483c8c6f99df72bc8e9a = L.popup({maxWidth: '300'});
+
+            
+                var html_86e6ccd555f644ef8cfe3fa7a886e9e7 = $('<div id="html_86e6ccd555f644ef8cfe3fa7a886e9e7" style="width: 100.0%; height: 100.0%;">A.G.office,High Court,Legislative Assembly,N.C.r.building,Rajasthan Secretariate,Vidyut Bhawan,Vitta Bhawan</div>')[0];
+                popup_fde06257795b483c8c6f99df72bc8e9a.setContent(html_86e6ccd555f644ef8cfe3fa7a886e9e7);
+            
+
+            circle_marker_7f8da1ddcea24a8698ef4f6a15fef7a2.bindPopup(popup_fde06257795b483c8c6f99df72bc8e9a);
+
+            
+        
+    
+            var circle_marker_d0aab14f78364b54bfc25452076951d6 = L.circleMarker(
+                [26.91469472400007,75.77727000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_8963e58f5492412db7470fe29931aacb = L.popup({maxWidth: '300'});
+
+            
+                var html_7b2875f438d744268005c9f1e07aa718 = $('<div id="html_7b2875f438d744268005c9f1e07aa718" style="width: 100.0%; height: 100.0%;">Ajmer Road,Industrial Estate,Jaipur R.s.,Khatipura Road,P.W.d.office,Raj Bhawan,Station Road</div>')[0];
+                popup_8963e58f5492412db7470fe29931aacb.setContent(html_7b2875f438d744268005c9f1e07aa718);
+            
+
+            circle_marker_d0aab14f78364b54bfc25452076951d6.bindPopup(popup_8963e58f5492412db7470fe29931aacb);
+
+            
+        
+    
+            var circle_marker_2c1f2283656849a396545f6009b61c31 = L.circleMarker(
+                [26.925730000000048,75.80659000000003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "magenta",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "magenta",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_f43f41ec68d2446b94155d7de7c648c3 = L.popup({maxWidth: '300'});
+
+            
+                var html_804ea25dfd794b8bac689a3d0171cc92 = $('<div id="html_804ea25dfd794b8bac689a3d0171cc92" style="width: 100.0%; height: 100.0%;">Airport Sanganer</div>')[0];
+                popup_f43f41ec68d2446b94155d7de7c648c3.setContent(html_804ea25dfd794b8bac689a3d0171cc92);
+            
+
+            circle_marker_2c1f2283656849a396545f6009b61c31.bindPopup(popup_f43f41ec68d2446b94155d7de7c648c3);
+
+            
+        
+    
+            var circle_marker_f77051e86f2b41e89cab58e33d1954f0 = L.circleMarker(
+                [26.960270000000037,75.66582122300008],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_22976487662f478fb263596d6423d3df = L.popup({maxWidth: '300'});
+
+            
+                var html_82899c5a247448ecaad769afff2a8c37 = $('<div id="html_82899c5a247448ecaad769afff2a8c37" style="width: 100.0%; height: 100.0%;">Bindayaka,Dhankya,Jhotwara,Jhotwara Industrial area,Khatipura,Khora Bisal,Meena Wala,Mundia Rampura,Nangal Jaisabohra,Neemera,Neendar Banar,Niwaroo,Rojda,Sinwar,Sirsi</div>')[0];
+                popup_22976487662f478fb263596d6423d3df.setContent(html_82899c5a247448ecaad769afff2a8c37);
+            
+
+            circle_marker_f77051e86f2b41e89cab58e33d1954f0.bindPopup(popup_22976487662f478fb263596d6423d3df);
+
+            
+        
+    
+            var circle_marker_b38b60c989df46cd884a213bc7ac1848 = L.circleMarker(
+                [27.044835000000035,75.80582090400003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_904703a9e72c44f086dcaa1026cf764e = L.popup({maxWidth: '300'});
+
+            
+                var html_b29f3b5a4d2e4243953abffb3db72fc5 = $('<div id="html_b29f3b5a4d2e4243953abffb3db72fc5" style="width: 100.0%; height: 100.0%;">Akhepura,Murlipura,Neendar,Road No-5 vkia,Vishwakarma Industrial area</div>')[0];
+                popup_904703a9e72c44f086dcaa1026cf764e.setContent(html_b29f3b5a4d2e4243953abffb3db72fc5);
+            
+
+            circle_marker_b38b60c989df46cd884a213bc7ac1848.bindPopup(popup_904703a9e72c44f086dcaa1026cf764e);
+
+            
+        
+    
+            var circle_marker_a15e1945f9704c7cb8841bdd6c1174d3 = L.circleMarker(
+                [26.890573800000034,75.79772500000007],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_cd8e4d3fa14e4879a84bc71c0c165564 = L.popup({maxWidth: '300'});
+
+            
+                var html_687212726da74aafbd2bd9ac14a9ee92 = $('<div id="html_687212726da74aafbd2bd9ac14a9ee92" style="width: 100.0%; height: 100.0%;">Bajaj Nagar,Bapu Nagar,Barkat Nagar,Gandhi Nagar,Rampura Roopa,S.D.m.hospitial</div>')[0];
+                popup_cd8e4d3fa14e4879a84bc71c0c165564.setContent(html_687212726da74aafbd2bd9ac14a9ee92);
+            
+
+            circle_marker_a15e1945f9704c7cb8841bdd6c1174d3.bindPopup(popup_cd8e4d3fa14e4879a84bc71c0c165564);
+
+            
+        
+    
+            var circle_marker_c6c9cdd1bbcc46759ff66b1209796a21 = L.circleMarker(
+                [26.939149388000036,75.79365000000007],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_23ffcddd747e4b57a1ca508338d6d017 = L.popup({maxWidth: '300'});
+
+            
+                var html_c37e3c1ea146452caf131ffa3bfb66a4 = $('<div id="html_c37e3c1ea146452caf131ffa3bfb66a4" style="width: 100.0%; height: 100.0%;">Bani Park,Collectorate,Dwarikapuri,Shastri Nagar,Sindhi Colony</div>')[0];
+                popup_23ffcddd747e4b57a1ca508338d6d017.setContent(html_c37e3c1ea146452caf131ffa3bfb66a4);
+            
+
+            circle_marker_c6c9cdd1bbcc46759ff66b1209796a21.bindPopup(popup_23ffcddd747e4b57a1ca508338d6d017);
+
+            
+        
+    
+            var circle_marker_49e40c608e994da7a81ed445e28bc08e = L.circleMarker(
+                [26.837535000000056,75.84306881700006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_59332047f8864ccd94468dfe96dcc729 = L.popup({maxWidth: '300'});
+
+            
+                var html_496c9cc1035f4be186202614a63107e8 = $('<div id="html_496c9cc1035f4be186202614a63107e8" style="width: 100.0%; height: 100.0%;">Malviya Industrial area,Malviya Nagar,Mrec Jaipur,Sector 11,12 malviya nagar</div>')[0];
+                popup_59332047f8864ccd94468dfe96dcc729.setContent(html_496c9cc1035f4be186202614a63107e8);
+            
+
+            circle_marker_49e40c608e994da7a81ed445e28bc08e.bindPopup(popup_59332047f8864ccd94468dfe96dcc729);
+
+            
+        
+    
+            var circle_marker_de2b558e2d2a4889ab4be01a7771ac1c = L.circleMarker(
+                [26.855660000000054,75.80375100000003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_0424d64707714bb1ac74b4ceb7eb1167 = L.popup({maxWidth: '300'});
+
+            
+                var html_d09a65d1268c4b9597372dd86cc5735a = $('<div id="html_d09a65d1268c4b9597372dd86cc5735a" style="width: 100.0%; height: 100.0%;">Amer Clark hotel,Durgapura</div>')[0];
+                popup_0424d64707714bb1ac74b4ceb7eb1167.setContent(html_d09a65d1268c4b9597372dd86cc5735a);
+            
+
+            circle_marker_de2b558e2d2a4889ab4be01a7771ac1c.bindPopup(popup_0424d64707714bb1ac74b4ceb7eb1167);
+
+            
+        
+    
+            var circle_marker_85c3b583137144d6a0a811058eee2596 = L.circleMarker(
+                [26.887180000000054,75.76112278200003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_5e52da234d154f44b4fd5f43873f29bc = L.popup({maxWidth: '300'});
+
+            
+                var html_58ec60ab1aa04b489916c93d1bad2d83 = $('<div id="html_58ec60ab1aa04b489916c93d1bad2d83" style="width: 100.0%; height: 100.0%;">Shyam Nagar</div>')[0];
+                popup_5e52da234d154f44b4fd5f43873f29bc.setContent(html_58ec60ab1aa04b489916c93d1bad2d83);
+            
+
+            circle_marker_85c3b583137144d6a0a811058eee2596.bindPopup(popup_5e52da234d154f44b4fd5f43873f29bc);
+
+            
+        
+    
+            var circle_marker_4378d6b99bca4dca94317d7072c74f33 = L.circleMarker(
+                [26.850430000000078,75.75422102300006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_945b06eba3a748dbbf91ad1d3675a7b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_f4d3c74ad0204327b43f8520147f277b = $('<div id="html_f4d3c74ad0204327b43f8520147f277b" style="width: 100.0%; height: 100.0%;">Mansarovar,S.F.s.mansarovar</div>')[0];
+                popup_945b06eba3a748dbbf91ad1d3675a7b2.setContent(html_f4d3c74ad0204327b43f8520147f277b);
+            
+
+            circle_marker_4378d6b99bca4dca94317d7072c74f33.bindPopup(popup_945b06eba3a748dbbf91ad1d3675a7b2);
+
+            
+        
+    
+            var circle_marker_b38439e502fc46e9860ace30f631b334 = L.circleMarker(
+                [26.907973437000066,75.73426000000006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_6acb1fef82b645c09c5142aa42569ef2 = L.popup({maxWidth: '300'});
+
+            
+                var html_681c28af14db4c64a4307b146fb3d9fa = $('<div id="html_681c28af14db4c64a4307b146fb3d9fa" style="width: 100.0%; height: 100.0%;">Vaishali Nagar</div>')[0];
+                popup_6acb1fef82b645c09c5142aa42569ef2.setContent(html_681c28af14db4c64a4307b146fb3d9fa);
+            
+
+            circle_marker_b38439e502fc46e9860ace30f631b334.bindPopup(popup_6acb1fef82b645c09c5142aa42569ef2);
+
+            
+        
+    
+            var circle_marker_0ce8a9a8a50e465eb819773aa170f964 = L.circleMarker(
+                [26.734907121000052,75.85837000000005],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_c819369b358d4c2fadc0ea56b9bf7f61 = L.popup({maxWidth: '300'});
+
+            
+                var html_94cb8154aa354e4ba258456f930a4dd6 = $('<div id="html_94cb8154aa354e4ba258456f930a4dd6" style="width: 100.0%; height: 100.0%;">Sitapura Industrial area</div>')[0];
+                popup_c819369b358d4c2fadc0ea56b9bf7f61.setContent(html_94cb8154aa354e4ba258456f930a4dd6);
+            
+
+            circle_marker_0ce8a9a8a50e465eb819773aa170f964.bindPopup(popup_c819369b358d4c2fadc0ea56b9bf7f61);
+
+            
+        
+    
+            var circle_marker_7ed0be4d7c464cb5a17e2df24eeb450a = L.circleMarker(
+                [26.925730000000048,75.80659000000003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "magenta",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "magenta",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_f88b71ccadbe4265a540e19d144d436f = L.popup({maxWidth: '300'});
+
+            
+                var html_56cdc6517b23492dafb984aee11a2ec3 = $('<div id="html_56cdc6517b23492dafb984aee11a2ec3" style="width: 100.0%; height: 100.0%;">Amba Bari,Dehar Ka balaji,Vidhyadhar Nagar</div>')[0];
+                popup_f88b71ccadbe4265a540e19d144d436f.setContent(html_56cdc6517b23492dafb984aee11a2ec3);
+            
+
+            circle_marker_7ed0be4d7c464cb5a17e2df24eeb450a.bindPopup(popup_f88b71ccadbe4265a540e19d144d436f);
+
+            
+        
+    
+            var circle_marker_9864d1c7680d491f8bb46383106cc5a2 = L.circleMarker(
+                [26.882650000000073,75.72597835600006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_4e68ef3e56544f5cb4586aa4f8d44c6d = L.popup({maxWidth: '300'});
+
+            
+                var html_5a936a9b97494b2a92c09cc3c4d3c79b = $('<div id="html_5a936a9b97494b2a92c09cc3c4d3c79b" style="width: 100.0%; height: 100.0%;">Heerapura</div>')[0];
+                popup_4e68ef3e56544f5cb4586aa4f8d44c6d.setContent(html_5a936a9b97494b2a92c09cc3c4d3c79b);
+            
+
+            circle_marker_9864d1c7680d491f8bb46383106cc5a2.bindPopup(popup_4e68ef3e56544f5cb4586aa4f8d44c6d);
+
+            
+        
+    
+            var circle_marker_fef214d8ea0845308bb0d9da7eb8e22f = L.circleMarker(
+                [26.925730000000048,75.80659000000003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "magenta",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "magenta",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_2126e01fedd6471aabd5c6a63b5fd948 = L.popup({maxWidth: '300'});
+
+            
+                var html_bd17fe1a7aea4ff2a294c8f8283b77bf = $('<div id="html_bd17fe1a7aea4ff2a294c8f8283b77bf" style="width: 100.0%; height: 100.0%;">Jagatpura</div>')[0];
+                popup_2126e01fedd6471aabd5c6a63b5fd948.setContent(html_bd17fe1a7aea4ff2a294c8f8283b77bf);
+            
+
+            circle_marker_fef214d8ea0845308bb0d9da7eb8e22f.bindPopup(popup_2126e01fedd6471aabd5c6a63b5fd948);
+
+            
+        
+    
+            var circle_marker_b9c60db07c8540d590da654c03e2dd4b = L.circleMarker(
+                [26.843485000000047,75.64410060200005],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_1ff4ed70a73c4820b7fde217c3e6865c = L.popup({maxWidth: '300'});
+
+            
+                var html_279a8388ed8b48d1bd34fb88c073f6b6 = $('<div id="html_279a8388ed8b48d1bd34fb88c073f6b6" style="width: 100.0%; height: 100.0%;">Bhambhoria,Bhankrota,Jaisinghpura Bas,Mukandpura,Thikariya</div>')[0];
+                popup_1ff4ed70a73c4820b7fde217c3e6865c.setContent(html_279a8388ed8b48d1bd34fb88c073f6b6);
+            
+
+            circle_marker_b9c60db07c8540d590da654c03e2dd4b.bindPopup(popup_1ff4ed70a73c4820b7fde217c3e6865c);
+
+            
+        
+    
+            var circle_marker_ea0c7ef17a0c436fb7b83bf9d1f58d5c = L.circleMarker(
+                [26.978205000000056,75.97575804100006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_262798b51b3046359a659a8c96f4fb36 = L.popup({maxWidth: '300'});
+
+            
+                var html_1edac7281af341d4a348ca0cde4ef145 = $('<div id="html_1edac7281af341d4a348ca0cde4ef145" style="width: 100.0%; height: 100.0%;">Crpf Campus  lalwas,Indergarh,Jaisingh Pura khor,Langareeyawas,Rahori,Roop Was,Saipura,Saiwar</div>')[0];
+                popup_262798b51b3046359a659a8c96f4fb36.setContent(html_1edac7281af341d4a348ca0cde4ef145);
+            
+
+            circle_marker_ea0c7ef17a0c436fb7b83bf9d1f58d5c.bindPopup(popup_262798b51b3046359a659a8c96f4fb36);
+
+            
+        
+    
+            var circle_marker_9ce858d104cf487a89031a8b0f1884fc = L.circleMarker(
+                [26.991700000000037,75.88563319000008],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_4f3e9fb0a9234e2b83bc4f3b0db20918 = L.popup({maxWidth: '300'});
+
+            
+                var html_cb95e78ebf36486baf56bfe0ab070a02 = $('<div id="html_cb95e78ebf36486baf56bfe0ab070a02" style="width: 100.0%; height: 100.0%;">Amer,Basna,Bhanpur Kalan,Bilod,Dhand,Khora Meena,Kookas,Nangal Soosawatan,Natata,Toda Meena</div>')[0];
+                popup_4f3e9fb0a9234e2b83bc4f3b0db20918.setContent(html_cb95e78ebf36486baf56bfe0ab070a02);
+            
+
+            circle_marker_9ce858d104cf487a89031a8b0f1884fc.bindPopup(popup_4f3e9fb0a9234e2b83bc4f3b0db20918);
+
+            
+        
+    
+            var circle_marker_9f960e923ccc4f479bebe4f84fcbdc6b = L.circleMarker(
+                [26.785010000000053,75.65884962700005],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_2dcbf2214ecc4674a28e8cd3a0224518 = L.popup({maxWidth: '300'});
+
+            
+                var html_98d604425b164918850011883aec553e = $('<div id="html_98d604425b164918850011883aec553e" style="width: 100.0%; height: 100.0%;">Kalwara,Lakhana,Mahapura,Muhana,Neota,Sanganer Bazar</div>')[0];
+                popup_2dcbf2214ecc4674a28e8cd3a0224518.setContent(html_98d604425b164918850011883aec553e);
+            
+
+            circle_marker_9f960e923ccc4f479bebe4f84fcbdc6b.bindPopup(popup_2dcbf2214ecc4674a28e8cd3a0224518);
+
+            
+        
+    
+            var circle_marker_2ff5cfef01e340f0ae19564fc9f23246 = L.circleMarker(
+                [26.925730000000048,75.80659000000003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "magenta",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "magenta",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_11009faea43b4cd4be1f1bdc1ff8ce46 = L.popup({maxWidth: '300'});
+
+            
+                var html_05224955cede46a1be005877b71c3a64 = $('<div id="html_05224955cede46a1be005877b71c3a64" style="width: 100.0%; height: 100.0%;">Harmada</div>')[0];
+                popup_11009faea43b4cd4be1f1bdc1ff8ce46.setContent(html_05224955cede46a1be005877b71c3a64);
+            
+
+            circle_marker_2ff5cfef01e340f0ae19564fc9f23246.bindPopup(popup_11009faea43b4cd4be1f1bdc1ff8ce46);
+
+            
+        
+    
+            var circle_marker_49069d148b5d4140bf12d9c6d7ee97ec = L.circleMarker(
+                [26.80696500000005,75.82659652100006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 1,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b148af9f2e0b47c7a473412f5d95998b);
+            
+    
+            var popup_1190a94a4c2a4978ab7220700e0b1da9 = L.popup({maxWidth: '300'});
+
+            
+                var html_4ca618ffc60c43e8b3e9260c9c656199 = $('<div id="html_4ca618ffc60c43e8b3e9260c9c656199" style="width: 100.0%; height: 100.0%;">Pratap Nagar housing board,Sector-11 Pratap nagar</div>')[0];
+                popup_1190a94a4c2a4978ab7220700e0b1da9.setContent(html_4ca618ffc60c43e8b3e9260c9c656199);
+            
+
+            circle_marker_49069d148b5d4140bf12d9c6d7ee97ec.bindPopup(popup_1190a94a4c2a4978ab7220700e0b1da9);
+
+            
+        
+</script>
